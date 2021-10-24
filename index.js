@@ -14,7 +14,7 @@ const db = mysql.createConnection({
   host     : 'us-cdbr-east-04.cleardb.com',
   user     : 'b7ed56ad01faf9',
   password :  '487013db',
-  database : 'sadb_records'
+  database : 'heroku_dd707196ed48181'
 }); 
 
 app.use(cors())
