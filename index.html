@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+</head>
+<body>
+    <button id='getAllDataBtn' onclick="getAllData()" >Get all data</button>
+    <div id="loading"></div>
+    <div id="updateDiv">
+        <br>
+        <form id="form_id">
+            <div>Update a user</div>
+            <label for="firstname">First name:</label>
+            <input type='text' id="first_name" name='firstname' value=''/>
+            <button onclick="update()">Update</button>
+            <button>cancel</button>
+        </form>
+        <br>
+    </div>
+    <table id="test">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name </th>
+            <th>Email</th>
+            <th>Gender</th>
+        </tr>
+    </table>
+    <script src="./index.js"></script>
+</body>
+</html>
