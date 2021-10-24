@@ -61,19 +61,19 @@ app.post('/insert',(req,res)=>{
 
     // TEST VARIABLE FIELDS
 
-    const first_name = 'Yannick'
-    const last_name = 'Loembet'
-    const email = 'yannick@something.com'
-    const gender = 'male'
-    const street_address = '21 ballon rd'
+    // const first_name = 'Yannick'
+    // const last_name = 'Loembet'
+    // const email = 'yannick@something.com'
+    // const gender = 'male'
+    // const street_address = '21 ballon rd'
    
     // ACTUAL VARIABLE FIELDS
 
-    // const first_name = req.body.first_name
-    // const last_name = req.body.last_name
-    // const email = req.body.email
-    // const gender = req.body.gender
-    // const street_address = req.body.street_address
+    const first_name = req.body.first_name
+    const last_name = req.body.last_name
+    const email = req.body.email
+    const gender = req.body.gender
+    const street_address = req.body.street_address
 
 
     db.query(`insert into mock_data values (null,'${first_name}','${last_name}','${email}','${gender}','${street_address}')`,(err,val,fields)=>{
