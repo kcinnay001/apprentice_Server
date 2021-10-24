@@ -13,7 +13,7 @@ require('dotenv').config();
 const db = mysql.createConnection({
   host     : 'us-cdbr-east-04.cleardb.com',
   user     : 'b7ed56ad01faf9',
-  password :  process.env.PASSWORD,
+  password :  '487013db',
   database : 'sadb_records'
 }); 
 
