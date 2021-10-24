@@ -52,7 +52,14 @@ app.get('/all',(req,res)=>{
 })
 
 app.get('/',(req,res)=>{
-    res.send('hello world')
+    
+    db.query('select 1',(err,val,fields)=>{
+        if(err){
+            console.log(err)
+        }
+        console.log('database connection: ' + db.state)
+        res.send('hello world')
+    })
 })
 
 
