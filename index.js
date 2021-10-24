@@ -11,8 +11,8 @@ const PORT         = process.env.PORT || 4000;
 require('dotenv').config();
 
 const db = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
+  host     : 'us-cdbr-east-04.cleardb.com',
+  user     : 'b7ed56ad01faf9',
   password :  process.env.PASSWORD,
   database : 'sadb_records'
 }); 
