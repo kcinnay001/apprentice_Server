@@ -17,11 +17,7 @@ const db = mysql.createConnection({
   database : 'heroku_dd707196ed48181'
 }); 
 
-app.use(cors({
-    origin:['https://apprentice-server.herokuapp.com/'],
-    methods:['GET','POST','PUT','DELETE'],
-    credentials:true
-}))
+app.use(cors())
 app.use(cookieParser());
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended:true}))
